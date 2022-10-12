@@ -1,0 +1,291 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Heebo";
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    max-width: 1152px;
+    margin: 27px auto 0;
+}
+
+nav a {
+    font-weight: 500px;
+    font-size: 20px;
+    line-height: 29px;
+    text-decoration: none;
+    color: green;
+    margin-right: 23px;
+}
+
+nav a:hover {
+    background-color: black;
+    transition: 2s;
+}
+
+.about-me-section{
+    width: 860px;
+    /*alinhou  os conteudos dos about-me-section mais pra baixo e pro centro*/
+    margin: 175px auto 0;
+    /*alinhou a imagem pra direita*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me-section div h1 {
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+
+.about-me-section div p {
+    width: 497px;
+    font-family: 16px;
+    line-height: 23px;
+    margin-bottom: 40px;
+}
+
+.about-me-section img {
+    width: 243px;
+    height: 243px;
+    border-radius: 50%;
+}
+
+/*Mexendo no pdf*/
+.button {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 13px;  
+    border-radius: 10px; 
+    text-decoration: none;
+    width: 28px;
+    height: 47px;
+    margin-top: 38px;
+}
+
+
+.my-projects-section{
+    background: #384772;
+    padding: 24px 0;
+    margin: 70px 0;
+}
+
+.my-projects-section h2 {
+    font-size: 28px;
+    color: #FFF;
+}
+
+/*alinhou ao meio os meus proojetos*/
+.my-projects-section section {
+    width: 860px;
+    margin:  0 auto;
+}
+
+/*alinhou os conteudos*/
+.my-projects-section section > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 23px;
+}
+
+.my-projects-section section > div div {
+    background: #FFF;
+    width: 49%;
+    /*espaço entre os conteudos*/
+    margin: 0 0 20px 0;
+    padding-bottom: 16px;
+    border-radius: 8px;
+}
+
+.my-projects-section div a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*colocou e alinhou a imagem*/
+.my-projects-section section > div div img {
+    width: 418px;
+    width: 170px;
+    border: 8px;
+    margin-left: 100px;
+}
+
+.my-projects-section section > div div h3 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 14px 0 9px 23px;
+}
+
+.my-projects-section section > div div p {
+    font-size: 16px;
+    margin-left: 23px;
+}
+
+.skills-container {
+    width: 100%;
+}
+
+.skills-container h2 {
+    font-size: 28px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.skills-container div {
+    width: 100%;
+    background: #384772;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.skills-container div img {
+    height: 75px;
+}
+
+.skills-container div img + img {
+    margin-left: 23px;
+}
+
+footer {
+    width: 856px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 1px solid #E0E0E0;
+    padding-top: 31px;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+    margin-top: 26px;
+    margin-bottom: 45px;
+}
+footer img + img {
+    margin-left: 35px;
+}
+
+footer img {
+    padding: 0 5px;
+}
+
+
+/*Tela de celular*/
+@media (max-width: 400px) {
+    /*pra encaixar na tela de celular*/
+    nav {
+        width: 100%;
+    }
+
+    /*quando chegar a 400px ele fica com 15px*/
+    nav a {
+        font-size: 15px;
+    }
+
+    /*todos conteudos abaixo do outro para se encaixar*/
+    .about-me-section {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 34px;
+        max-width: 100%;
+    }
+
+    .about-me-section div h1 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: 44px;
+        text-align: center;
+    }
+
+    .about-me-section div p {
+        font-size: 16px;
+        width: 328px;
+        text-align: center;
+    }
+
+    /*alinhou a imagem: e mudou de tamaho*/
+    .about-me-section img {
+        width: 177px;
+        height: 177px;
+        margin-bottom: 36px;
+    }
+    
+    .button {
+        margin-left: 100px;
+    }
+
+    .my-projects-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*alinhou o texto no centro*/
+    .my-projects-section section h2 {
+        font-size: 22px;
+        margin-left: 100px;
+    }
+
+
+    /*alinhou as imagens do projeto um embaixo do outro*/
+    .my-projects-section section > div div {
+        width: 354px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .my-projects-section section > div div h3 {
+        font-size: 22px;
+    }
+
+    .my-projects-section section > div div p {
+        font-size: 16px;
+        max-width: 314px;
+    }
+
+    .skills-container h2 {
+        font-size: 24px;
+    }
+
+
+    /*para quebrar as imagens*/
+    .skills-container div {
+        flex-wrap: wrap;
+        padding: 4px 0 34px;
+    }
+
+
+    /*para encaixar as imagens em duas*/
+    .skills-container div img, .skills-container div img + img {
+        margin: 40px 30px 0px;
+    }
+
+    /*ajustou os contactos do footer para se encaixar na tela do celular*/
+    footer {
+        width: 100%;
+    }
+
+    footer img {
+        padding: 0 5px;
+        cursor: pointer;
+    }
+
+
+    /*ajuda a encaixar items*/
+    /*max-widht: 100%
+      width: 100%
+      height: 100%
+      max-height: 100%*/
+
+    
+}
+
